@@ -30,6 +30,9 @@ a {
     padding: 0 15px;
     margin: 0 auto;
 }
+.icon {
+    fill: #F4F4FD;
+}
 
 /* header */
 .header {
@@ -136,7 +139,7 @@ position: relative;
 .first-section {
     background-color: #2e2f42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png) ;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg) ;
     background-repeat: no-repeat;
     background-position:  center;
     background-size: cover;
@@ -174,7 +177,7 @@ position: relative;
     border-radius: 4px;
     margin-right: auto;
     margin-left: auto;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 404BBF */
 .button:hover {
@@ -361,6 +364,7 @@ position: relative;
 
 .footer-logo .logo-part {
     color: #f4f4fd;
+    line-height: 1.17;
 }
 
 .footer-logo {
@@ -375,4 +379,48 @@ position: relative;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.text-block {
+    margin-right: 120px;
+}
+.footer-socmedia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    margin-right: auto;
+}
+.footer-socmedia-block {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+}
+.social-media {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.footer-socmedia-block-soclinks a.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-socmedia-block-soclinks a.circle:hover,
+.footer-socmedia-block-soclinks a.circle:focus {
+    background-color: #31D0AA;
 }
